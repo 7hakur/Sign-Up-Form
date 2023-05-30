@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Norse";
+  src: url(fonts/Norse-Bold.otf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+:root {
+  --color-one: #f9fafb;
+  --color-two: white;
+  ---logo-section: 45vw;
+  --signup-section: 55vw;
+  --base: 16px;
+  --headers: 28px;
+  --subtitles: 26px;
+  --other: 20px;
+  --default-padding: 50px 30px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+}
+
+.logo--section {
+  width: var(---logo-section);
+  background: url("./images/halie-west-25xggax4bSA-unsplash.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.logo {
+  width: 130px;
+}
+.logo--section div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 300px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.logo--section span {
+  font-family: "Norse";
+  font-size: 120px;
+  color: var(--color-two);
+}
+.non-sense {
+  padding: var(--default-padding);
+
+  background: var(--color-one);
+}
+
+.txt {
+  font-size: var(--headers);
+  width: 68%;
+}
+.sub-txt {
+  font-size: var(--subtitles);
+}
+fieldset {
+  border: none;
+}
+legend {
+  font-size: var(--subtitles);
+}
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(80, 77, 77);
+}
+.input {
+  display: flex;
+  margin-top: 30px;
+}
+.input div {
+  margin-right: 100px;
+}
+input {
+  padding: 0.4em 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+input:focus {
+  outline: none !important;
+  border: 1px solid blue;
+  box-shadow: 0 0 10px #719ece;
+}
+fieldset {
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  padding: var(--default-padding);
+}
+#result {
+  font-size: 12px;
+  color: red;
+}
+button[type="submit"] {
+  padding: 0.9em 1.8em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #719ece;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+button[type="submit"]:hover {
+  opacity: 0.8;
+}
+.new-account {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 16px;
+  color: rgb(80, 77, 77);
+  font-weight: bold;
+}
+.new-account a {
+  color: #719ece;
+  text-decoration: none;
+}
